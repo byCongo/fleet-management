@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #007bff;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .nav-link:hover {
+    color: #d4d4d4;
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255,255,255,.1);
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  

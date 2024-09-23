@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './AddVehicle.css'; 
 
 const AddVehicle = () => {
   const [vehicle, setVehicle] = useState({
@@ -15,7 +16,7 @@ const AddVehicle = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/vehicles', vehicle) // Post to the back-end API
+    axios.post('/api/vehicles', vehicle)
       .then(response => {
         alert('Vehicle added successfully!');
         setVehicle({
@@ -31,7 +32,7 @@ const AddVehicle = () => {
   };
 
   return (
-    <div>
+    <div className="add-vehicle">
       <h2>Add New Vehicle</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

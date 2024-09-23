@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './TripList.css'; 
 
 const TripList = () => {
   const [trips, setTrips] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/trips') // Fetch trips from back-end API
+    axios.get('/api/trips')
       .then(response => {
         setTrips(response.data);
       })
@@ -15,9 +16,9 @@ const TripList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="trip-list">
       <h2>Trip List</h2>
-      <table className="table">
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Date</th>

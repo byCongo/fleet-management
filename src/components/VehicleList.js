@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './VehicleList.css';  
 
 const VehicleList = () => {
   const [vehicles, setVehicles] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/vehicles') // Assuming your back-end has this API endpoint
+    axios.get('/api/vehicles')
       .then(response => {
         setVehicles(response.data);
       })
@@ -15,9 +16,9 @@ const VehicleList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="vehicle-list">
       <h2>Vehicle List</h2>
-      <table className="table">
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Model</th>

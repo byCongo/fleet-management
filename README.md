@@ -19,4 +19,4 @@ We welcome contributions! Please consider the following guidelines:
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/fleet-management)
 
 ## License
-All contributions are licensed under the MIT License.
+All contributions are licensed under the Apache License.
